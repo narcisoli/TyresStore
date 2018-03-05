@@ -8,15 +8,21 @@ namespace TyresStore.Controllers
 {
     public class HomeController : Controller
     {
+
+        VehiclesRepository vehiclesRepository = new VehiclesRepository();
+        TyresRepository tyresRepository = new TyresRepository();
+
         public ActionResult Index()
         {
-            return View();
+            List<Vehicle> vehicles = vehiclesRepository.getVehicles();
+            return View(vehicles);
         }
 
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-
+            TyresStoreContext t = new TyresStoreContext();
+            
             return View();
         }
 

@@ -22,3 +22,16 @@ C:\Projects\workshop\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repos
 C:\Projects\workshop\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.csproj.CoreCompileInputs.cache
 C:\Projects\workshop\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.dll
 C:\Projects\workshop\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.pdb
+C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\bin\Debug\TyresStore.Repository.dll.config
+C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\bin\Debug\TyresStore.Repository.dll
+C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\bin\Debug\TyresStore.Repository.pdb
+C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\bin\Debug\EntityFramework.dll
+C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\bin\Debug\EntityFramework.xml
+C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.csprojResolveAssemblyReference.cache
+C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.Migrations.InitialCreate.resources
+C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.csproj.GenerateResource.Cache
+C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.csproj.CoreCompileInputs.cache
+C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.dll
+C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.pdb
