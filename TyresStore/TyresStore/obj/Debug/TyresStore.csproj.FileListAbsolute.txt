@@ -145,3 +145,4 @@ C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore\obj\Debug\TyresS
 C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore\obj\Debug\TyresStore.csproj.CoreCompileInputs.cache
 C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore\obj\Debug\TyresStore.dll
 C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore\obj\Debug\TyresStore.pdb
+C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore\bin\MaterialIcons.dll

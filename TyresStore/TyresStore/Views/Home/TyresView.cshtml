@@ -1,0 +1,35 @@
+﻿@model IList<TyresStore.Repository.Models.Tyre>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Brand</td>
+            <td>Price</td>
+            <td>Season</td>
+        </tr>
+    </thead>
+   
+
+    <tbody>
+        @foreach (var tyre in Model)
+        {
+            <tr>
+                <td>@tyre.Brand</td>
+                <td>@tyre.Season</td>
+                <td>@tyre.ArticleCode</td>
+                <td>@tyre.Price</td>
+                <td class="button-select">
+
+                    <button type="button" class="btn btn-primary" onclick="mainModel.updateBuket(@tyre.ID)"> Add to cart <span class="glyphicon glyphicon-plus"></span></button>
+
+                </td>
+
+            </tr>
+        }
+   
+
+    </tbody>
+</table>
+

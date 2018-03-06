@@ -35,3 +35,4 @@ C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\D
 C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.csproj.CoreCompileInputs.cache
 C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.dll
 C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.pdb
+C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\bin\Debug\MaterialIcons.dll

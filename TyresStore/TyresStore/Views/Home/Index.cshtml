@@ -1,14 +1,53 @@
-﻿@model IList<TyresStore.Repository.Models.Vehicle>
+﻿@model TyresStore.Models.Model
 @{
     ViewBag.Title = "Home Page";
 }
-@foreach (var vehicle in Model)
+<!--
+
+
+@foreach (var vehicle in Model.vehicles)
 {
     <p>@vehicle.Manufacturer</p>
     <p>@vehicle.Model</p>
     <p>@vehicle.Year</p>
     <p>@vehicle.Color</p>
     <p>@vehicle.ID</p>
+
     <br />
 
 }
+
+
+    -->
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>Manufacturer</td>
+            <td>Model</td>
+            <td>Year</td>
+            <td>Color</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var vehicle in Model.vehicles)
+        {
+            <tr>
+                <td>@vehicle.Manufacturer</td>
+                <td>@vehicle.Model</td>
+                <td>@vehicle.Year</td>
+                <td>@vehicle.Color</td>
+                <td class="button-select">
+               
+                    <button type="button" class="btn btn-primary" onclick="mainModel.loadTyres(@vehicle.ID)"> Select <span class="glyphicon-share-alt"></span></button>
+
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="das"></div>
+<div class="bucket"></div>
+
