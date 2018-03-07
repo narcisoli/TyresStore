@@ -4,34 +4,44 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    @Styles.Render("~/Content/css")
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+    @Styles.Render("~/Content/bootstrap")
+    @Styles.Render("~/Content/material")
     @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/css")
+
 </head>
 <body>
-    
-        <nav class="black">
-            <div class="logo">Logo</div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#" class="active">Log In</a></li>
-            </ul>
-        </nav>
-        
-        <div class="container">
-            @RenderBody()
-            <hr />
-            <footer>
-                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-            </footer>
-        </div>
 
-        @Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")
-       @Scripts.Render("~/bundles/myscript")
-        @RenderSection("scripts", required: false)
+    <div class="header">
+        <div class="shopping-cart">
+            <div class="glyphicon glyphicon-shopping-cart">
+                <div class="cart-button">(0)</div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <button id="sterge-cos" class="btn btn-mdb-color" onclick="basketModel.stergetot()">Sterge tot</button>
+    <button id="afiseaza-cod" class="btn btn-deep-purple" onclick="basketModel.afiseazaCos()">Afiseaza Cos</button>
+
+
+    <div class="container">
+        @RenderBody()
+        <hr />
+        
+    </div>
+
+   
+    
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/material")
+    @Scripts.Render("~/bundles/myscript")
+    @RenderSection("scripts", required: false)
 </body>
 </html>

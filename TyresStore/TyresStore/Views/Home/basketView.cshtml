@@ -1,0 +1,34 @@
+﻿@model IList<TyresStore.Repository.Models.Basket>
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+
+                <td>Brand</td>
+                <td>Time</td>
+                <td>Price</td>
+                <td>Cant</td>
+
+            </tr>
+        </thead>
+
+
+        <tbody>
+            @foreach (var tyre in Model)
+            {
+            <tr>
+                <td>@tyre.Description</td>
+                <td>@tyre.AddedDate</td>
+                <td>@tyre.TyreId</td>
+                <td>@tyre.cant</td>
+                <td>  <button type="button" class="btn btn-mdb-color default-color" onclick="basketModel.adaugaCantitate(@tyre.ID)">+</button></td>
+                <td>  <button type="button" class="btn btn-mdb-color ">-</button></td>
+
+
+            </tr>
+            }
+
+
+        </tbody>
+    </table>
+

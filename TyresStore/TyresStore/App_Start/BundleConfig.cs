@@ -25,14 +25,25 @@ namespace TyresStore
 
             bundles.Add(new ScriptBundle("~/bundles/myscript").Include(
                      "~/Scripts/myscript.js",
+                      "~/Scripts/jquery.colorbox-min.js",
                      "~/Scripts/client/basketmodel.js",
                      "~/Scripts/client/mainmodel.js",
                      "~/Scripts/client/handlers.js"));
 
+            bundles.Add(new StyleBundle("~/bundles/boostrap").Include(
+                    "~/Scripts/bootstrap.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/material").Include(
+                     "~/Scripts/material/mdb.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      
+                      "~/Content/colorbox.css",
                       "~/Content/site.css",
                       "~/Content/myStyle.css"));
+            bundles.Add(new StyleBundle("~/Content/material").Include(
+                     "~/Content/Material/mdb.css"));
+
         }
     }
 }

@@ -1,7 +1,12 @@
 ﻿var mainModel = null;
 var basketModel = null;
 function MainModel() {
+    
     var _self = this;
+    this.showLoadingTyres = false;
+    basketModel = new BasketModel();
+    basketModel.getItems();
+    
 
     this.updateBuket = function (tyreID) {
         $.ajax({

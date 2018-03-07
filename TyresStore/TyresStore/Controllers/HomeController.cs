@@ -10,13 +10,15 @@ namespace TyresStore.Controllers
 {
     public class HomeController : Controller
     {
-        List<Tyre> bucketlist = new List<Tyre>();
+        List<BasketObject> bucketlist;
 
         VehiclesRepository vehiclesRepository = new VehiclesRepository();
         TyresRepository tyresRepository = new TyresRepository();
+        BasketRepository basketRepository = new BasketRepository();
 
         public ActionResult Index()
         {
+           
             List<Vehicle> vehicles = vehiclesRepository.getVehicles();
             List<Tyre> tyres = tyresRepository.GetTyres();
             Model a = Model.getIntance(vehicles,tyres);
@@ -32,16 +34,67 @@ namespace TyresStore.Controllers
             return ret;
         }
 
-        public string updateBucket(int tyreId)
+        public ActionResult AddTyreToBasket(int tyreID,string description)
+        {
+            bool tyreAdded = basketRepository.typeAlreadyAdded(tyreID);
+            if (!tyreAdded) basketRepository.StoreTyre(tyreID, description);
+            return Json(new { exist = tyreAdded });
+        }
+        public ActionResult StergeTot()
+        {
+           
+            basketRepository.stergeTot();
+            return Json(new { exist = true });
+        }
+
+        public string GetBasketHTML()
+        {
+            List<Basket> list = basketRepository.getItems();
+            string ret = RenderPartialViewToString("~/Views/Home/basketView.cshtml", list);
+            return ret;
+        }
+
+        public ActionResult StergeItem(int tyreid)
+        {
+            basketRepository.removeItem(tyreid);
+            return Json(new { exist = true });
+        }
+
+        public ActionResult AdaugaCantitate(int tyreid)
+        {
+            basketRepository.adaugaCantitate(tyreid);
+            return Json(new { exist = true });
+        }
+
+        public ActionResult StergeCantitate(int tyreid)
+        {
+            basketRepository.stergeCantitate(tyreid);
+            return Json(new { exist = true });
+        }
+
+
+        /*public string updateBucket(int tyreId)
         {
             
             Tyre tyre = tyresRepository.GetTyreById(tyreId);
-           
-            bucketlist.Add(tyre);
+
+            bucketlist=StaticList.getList();
+            bool nou= true;
+            foreach(BasketObject item in bucketlist)
+            {
+                if (item.tyre.ID == tyreId)
+                {
+                    item.cant++;
+                    nou = false;
+                }
+            }
+            if(nou)
+            bucketlist.Add(new BasketObject(tyre,1));
+
             string res = RenderPartialViewToString("~/Views/Home/bucketView.cshtml", bucketlist);
             return res;
             
-        }
+        }*/
 
 
         public string RenderPartialViewToString(string viewName, object model)

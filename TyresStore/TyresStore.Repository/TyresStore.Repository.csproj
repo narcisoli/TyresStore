@@ -36,9 +36,6 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="MaterialIcons, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MaterialIcons.1.0.3\lib\MaterialIcons.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -50,13 +47,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BasketRepository.cs" />
+    <Compile Include="Interfaces\IBasketRepository.cs" />
     <Compile Include="Interfaces\ITyresRepository.cs" />
     <Compile Include="Interfaces\IVehiclesRepository.cs" />
     <Compile Include="Migrations\201802261424055_InitialCreate.cs" />
     <Compile Include="Migrations\201802261424055_InitialCreate.Designer.cs">
       <DependentUpon>201802261424055_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803070704473_Mig2.cs" />
+    <Compile Include="Migrations\201803070704473_Mig2.Designer.cs">
+      <DependentUpon>201803070704473_Mig2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803070919183_Mig3 +cantitate.cs" />
+    <Compile Include="Migrations\201803070919183_Mig3 +cantitate.Designer.cs">
+      <DependentUpon>201803070919183_Mig3 +cantitate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Basket.cs" />
     <Compile Include="Models\Tyre.cs" />
     <Compile Include="Models\Vehicle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,6 +78,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -88,6 +97,8 @@
     <None Include="fonts\glyphicons-halflings-regular.woff" />
     <None Include="fonts\glyphicons-halflings-regular.woff2" />
     <None Include="packages.config" />
+    <None Include="Scripts\bower.json" />
+    <None Include="Scripts\build.log" />
     <None Include="Scripts\esm\popper-utils.js.map" />
     <None Include="Scripts\esm\popper-utils.min.js.map" />
     <None Include="Scripts\esm\popper.js.map" />
@@ -108,6 +119,12 @@
     <EmbeddedResource Include="Migrations\201802261424055_InitialCreate.resx">
       <DependentUpon>201802261424055_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803070704473_Mig2.resx">
+      <DependentUpon>201803070704473_Mig2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803070919183_Mig3 +cantitate.resx">
+      <DependentUpon>201803070919183_Mig3 +cantitate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\font-awesome.css" />
@@ -122,6 +139,10 @@
     <Content Include="Scripts\jquery-3.0.0.min.js" />
     <Content Include="Scripts\jquery-3.0.0.slim.js" />
     <Content Include="Scripts\jquery-3.0.0.slim.min.js" />
+    <Content Include="Scripts\LICENSE.txt" />
+    <Content Include="Scripts\polymer-micro.html" />
+    <Content Include="Scripts\polymer-mini.html" />
+    <Content Include="Scripts\polymer.html" />
     <Content Include="Scripts\popper-utils.js" />
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper.js" />
