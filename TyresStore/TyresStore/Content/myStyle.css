@@ -49,16 +49,23 @@
     transition: .3s;
 }
 
-a {
-    color: white;
-}
-
 
 
 
 .container {
-
-    margin-top:100px;
+ margin-top:100px;
    
+}
+
+.fab{
+    margin-bottom:20px;
+    margin-right:20px;
+    position:fixed;
+    width:100px;
+    height:100px;
+    border-radius:50px;
+    right:0;
+    bottom:0;
+    background-color:red;
 }
 

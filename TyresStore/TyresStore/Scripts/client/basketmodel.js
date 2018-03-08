@@ -9,16 +9,7 @@
             type: "post",
             data: { tyreID: tyreID, description: description },
             success: function (response) {
-                if (!response.exist) {
-
-                    _self.basketItems.push(tyreID);
-
-                    updateCartCount()
-
-                }
-                else {
-                    alert("Tyre already added");
-                }
+                _self.getItems();
             }
         });
 
@@ -31,24 +22,23 @@
             type: "get",
             success: function (response) {
                 if (response) {
-                    _self.basketItems = response;
-
+                    updateCartNumber(parseInt(response));
 
                 }
-                updateCartCount();
+                
 
             }
         });
 
     }
+    
 
     this.stergetot = function () {
         $.ajax({
             url: "Home/StergeTot",
             type: "post",
             success: function (response) {
-                _self.basketItems = [];
-                restartCart(0);
+                _self.getItems();
 
             }
         });
@@ -67,10 +57,8 @@
                         iframe: false,
                         height: "80%",
                         width: "80%"
-
-
                     });
-                    html = response;
+                   
 
                 }
 
@@ -83,20 +71,37 @@
     this.adaugaCantitate = function (tyreID) {
         $.ajax({
             url: "Home/AdaugaCantitate",
-            type: "post",
+            type: "get",
             data: { tyreid: tyreID },
             success: function (response) {
                 if (response) {
-                    $.colorbox.close();
-                    $("#afiseaza-cod").click();
-                    
-
+                    updateBasketHTML(response);
+                    _self.getItems();
                 }
 
 
             }
         });
     }
+
+    this.stergeCantitate = function (tyreID) {
+        $.ajax({
+            url: "Home/StergeCantitate",
+            type: "get",
+            data: { tyreid: tyreID },
+            success: function (response) {
+                if (response) {
+                   
+                    updateBasketHTML(response);
+                    _self.getItems();
+                }
+
+
+            }
+        });
+    }
+
+    
 
 
 

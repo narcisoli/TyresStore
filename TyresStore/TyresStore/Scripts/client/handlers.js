@@ -3,16 +3,14 @@
    
 };
 
-function updateCartCount() {
-    $(".cart-button").html("(" + basketModel.basketItems.length + ")");
-}
 
-function restartCart(number) {
+
+function updateCartNumber(number) {
     $(".cart-button").html("(" + number + ")");
 }
 
 function updateBasketHTML(res) {
-    
+    $("#cboxContent").find(".table-responsive").html(res);
 }
 
 function afiseaza(res) {

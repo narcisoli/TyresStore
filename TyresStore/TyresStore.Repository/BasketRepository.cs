@@ -11,10 +11,11 @@ namespace TyresStore.Repository
     public class BasketRepository : IBasketRepository
     {
         TyresStoreContext DbContext = new TyresStoreContext();
+        TyresRepository tr = new TyresRepository();
 
         public void adaugaCantitate(int tyreID)
         {
-            var item = DbContext.BasketItems.SingleOrDefault(x => x.ID == tyreID);
+            var item = DbContext.BasketItems.SingleOrDefault(x => x.TyreId == tyreID);
             item.cant++;
             DbContext.SaveChanges();
         }
@@ -26,14 +27,14 @@ namespace TyresStore.Repository
 
         public void removeItem(int itemId)
         {
-            var item = DbContext.BasketItems.SingleOrDefault(x => x.ID == itemId);
+            var item = DbContext.BasketItems.SingleOrDefault(x => x.TyreId == itemId);
             DbContext.BasketItems.Remove(item);
             DbContext.SaveChanges();
         }
 
         public void stergeCantitate(int tyreID)
         {
-            var item = DbContext.BasketItems.SingleOrDefault(x => x.ID == tyreID);
+            var item = DbContext.BasketItems.SingleOrDefault(x => x.TyreId == tyreID);
             if (item.cant > 1)
                 item.cant--;
             else
@@ -50,7 +51,9 @@ namespace TyresStore.Repository
 
         public void StoreTyre(int tyreID, string description)
         {
+            Tyre tyre=tr.GetTyreById(tyreID);
             Basket item = new Basket();
+            item.pret =(int) tyre.Price;
             item.TyreId = tyreID;
             item.Description = description;
             item.cant = 1;
@@ -64,7 +67,7 @@ namespace TyresStore.Repository
         public bool typeAlreadyAdded(int tyreID)
         {
             List<Basket> items = this.getItems();
-            var item = items.SingleOrDefault(x => x.TyreId == tyreID);
+            var item = items.FirstOrDefault(x => x.TyreId == tyreID);
             return item != null;
         }
     }

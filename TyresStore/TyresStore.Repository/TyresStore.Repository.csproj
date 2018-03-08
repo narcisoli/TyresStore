@@ -63,6 +63,26 @@
     <Compile Include="Migrations\201803070919183_Mig3 +cantitate.Designer.cs">
       <DependentUpon>201803070919183_Mig3 +cantitate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803071910352_removeid.cs" />
+    <Compile Include="Migrations\201803071910352_removeid.Designer.cs">
+      <DependentUpon>201803071910352_removeid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803080720233_UpdateBasket.cs" />
+    <Compile Include="Migrations\201803080720233_UpdateBasket.Designer.cs">
+      <DependentUpon>201803080720233_UpdateBasket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803080725567_UpdateBasketNew.cs" />
+    <Compile Include="Migrations\201803080725567_UpdateBasketNew.Designer.cs">
+      <DependentUpon>201803080725567_UpdateBasketNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803081018498_myproiect.cs" />
+    <Compile Include="Migrations\201803081018498_myproiect.Designer.cs">
+      <DependentUpon>201803081018498_myproiect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803081047014_adaugarepret.cs" />
+    <Compile Include="Migrations\201803081047014_adaugarepret.Designer.cs">
+      <DependentUpon>201803081047014_adaugarepret.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Basket.cs" />
     <Compile Include="Models\Tyre.cs" />
@@ -124,6 +144,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803070919183_Mig3 +cantitate.resx">
       <DependentUpon>201803070919183_Mig3 +cantitate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803071910352_removeid.resx">
+      <DependentUpon>201803071910352_removeid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803080720233_UpdateBasket.resx">
+      <DependentUpon>201803080720233_UpdateBasket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803080725567_UpdateBasketNew.resx">
+      <DependentUpon>201803080725567_UpdateBasketNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803081018498_myproiect.resx">
+      <DependentUpon>201803081018498_myproiect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803081047014_adaugarepret.resx">
+      <DependentUpon>201803081047014_adaugarepret.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

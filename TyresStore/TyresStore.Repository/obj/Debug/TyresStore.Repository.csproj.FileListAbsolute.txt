@@ -37,3 +37,8 @@ C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\D
 C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.csprojResolveAssemblyReference.cache
 C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.Migrations.Mig2.resources
 C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.Migrations.Mig3cantitate.resources
+C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.Migrations.removeid.resources
+C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.Migrations.UpdateBasket.resources
+C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.Migrations.UpdateBasketNew.resources
+C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.Migrations.myproiect.resources
+C:\Users\nrcs\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.Migrations.adaugarepret.resources

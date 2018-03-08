@@ -1,10 +1,16 @@
 ﻿@model IList<TyresStore.Repository.Models.Basket>
+
+@if (Model.Count != 0)
+{
+    int pret=0;
+    
+
 <div class="table-responsive">
     <table class="table">
         <thead>
             <tr>
 
-                <td>Brand</td>
+                <td>ID</td>
                 <td>Time</td>
                 <td>Price</td>
                 <td>Cant</td>
@@ -16,19 +22,41 @@
         <tbody>
             @foreach (var tyre in Model)
             {
-            <tr>
-                <td>@tyre.Description</td>
-                <td>@tyre.AddedDate</td>
-                <td>@tyre.TyreId</td>
-                <td>@tyre.cant</td>
-                <td>  <button type="button" class="btn btn-mdb-color default-color" onclick="basketModel.adaugaCantitate(@tyre.ID)">+</button></td>
-                <td>  <button type="button" class="btn btn-mdb-color ">-</button></td>
+
+                pret += tyre.cant * tyre.pret;
+                <tr>
+                    <td>@tyre.TyreId</td>
+                    <td>@tyre.AddedDate</td>
+                    <td>@tyre.pret</td>
+                    <td>@tyre.cant</td>
+                    <td>  <button type="button" class="btn btn-mdb-color default-color" onclick="basketModel.adaugaCantitate(@tyre.TyreId)">+</button></td>
+                    <td>  <button type="button" class="btn btn-mdb-color " onclick="basketModel.stergeCantitate(@tyre.TyreId)">-</button></td>
 
 
-            </tr>
+                </tr>
             }
 
 
         </tbody>
     </table>
+
+    <div class="container">
+        <button type="button" class="btn btn-mdb-color default-color">Finalizeaza</button>
+        <h3>Pret total: @pret</h3>
+
+    </div>
+</div>
+
+
+
+
+
+
+}
+else
+{<h4 class="text-center">Cosul este gol</h4>}
+    
+
+
+
 

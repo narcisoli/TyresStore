@@ -12,9 +12,10 @@ namespace TyresStore.Repository.Models
         [Key]
         public int ID { get; set; }
         public int TyreId { get; set; }
-        public string AddedDate { get; set; }
         public string Description { get; set; }
+        public string AddedDate { get; set; }
         public int cant { get; set; }
+        public int pret { get; set; }
 
     }
 }

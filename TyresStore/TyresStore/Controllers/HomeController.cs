@@ -10,7 +10,7 @@ namespace TyresStore.Controllers
 {
     public class HomeController : Controller
     {
-        List<BasketObject> bucketlist;
+
 
         VehiclesRepository vehiclesRepository = new VehiclesRepository();
         TyresRepository tyresRepository = new TyresRepository();
@@ -18,14 +18,24 @@ namespace TyresStore.Controllers
 
         public ActionResult Index()
         {
-           
+
             List<Vehicle> vehicles = vehiclesRepository.getVehicles();
-            List<Tyre> tyres = tyresRepository.GetTyres();
-            Model a = Model.getIntance(vehicles,tyres);
-        
-            return View(a);
-        
-    }
+
+
+            return View(vehicles);
+
+        }
+
+        public int GetBasketItems()
+        {
+            List<Basket> list=basketRepository.getItems();
+            int nr = 0;
+            foreach (Basket b in list)
+            {
+                nr += b.cant;
+            }
+            return nr;
+        }
 
         public string getTyres(int vecID)
         {
@@ -34,15 +44,17 @@ namespace TyresStore.Controllers
             return ret;
         }
 
-        public ActionResult AddTyreToBasket(int tyreID,string description)
+        public ActionResult AddTyreToBasket(int tyreID, string description)
         {
             bool tyreAdded = basketRepository.typeAlreadyAdded(tyreID);
             if (!tyreAdded) basketRepository.StoreTyre(tyreID, description);
+            else basketRepository.adaugaCantitate(tyreID);
+
             return Json(new { exist = tyreAdded });
         }
         public ActionResult StergeTot()
         {
-           
+
             basketRepository.stergeTot();
             return Json(new { exist = true });
         }
@@ -54,22 +66,22 @@ namespace TyresStore.Controllers
             return ret;
         }
 
-        public ActionResult StergeItem(int tyreid)
+        public string StergeItem(int tyreid)
         {
             basketRepository.removeItem(tyreid);
-            return Json(new { exist = true });
+            return GetBasketHTML();
         }
 
-        public ActionResult AdaugaCantitate(int tyreid)
+        public string AdaugaCantitate(int tyreid)
         {
             basketRepository.adaugaCantitate(tyreid);
-            return Json(new { exist = true });
+            return GetBasketHTML();
         }
 
-        public ActionResult StergeCantitate(int tyreid)
+        public string StergeCantitate(int tyreid)
         {
             basketRepository.stergeCantitate(tyreid);
-            return Json(new { exist = true });
+            return GetBasketHTML();
         }
 
 

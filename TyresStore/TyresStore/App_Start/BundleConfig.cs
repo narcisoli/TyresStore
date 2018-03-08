@@ -9,10 +9,10 @@ namespace TyresStore
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/Scripts/tools/jquery-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.validate*"));
+                        "~/Scripts/tools/jquery.validate*"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at https://modernizr.com to pick only the tests you need.
@@ -20,26 +20,25 @@ namespace TyresStore
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                      "~/Scripts/tools/bootstrap.js",
+                       "~/Scripts/tools/jquery.colorbox-min.js",
+                      "~/Scripts/tools/respond.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/myscript").Include(
-                     "~/Scripts/myscript.js",
-                      "~/Scripts/jquery.colorbox-min.js",
+  
                      "~/Scripts/client/basketmodel.js",
                      "~/Scripts/client/mainmodel.js",
                      "~/Scripts/client/handlers.js"));
 
             bundles.Add(new StyleBundle("~/bundles/boostrap").Include(
-                    "~/Scripts/bootstrap.css"));
+                    "~/Scripts/toolscss/bootstrap.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/material").Include(
                      "~/Scripts/material/mdb.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       
-                      "~/Content/colorbox.css",
-                      "~/Content/site.css",
+                      "~/Content/toolscss/colorbox.css",
                       "~/Content/myStyle.css"));
             bundles.Add(new StyleBundle("~/Content/material").Include(
                      "~/Content/Material/mdb.css"));

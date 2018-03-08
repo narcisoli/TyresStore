@@ -5,7 +5,7 @@ function MainModel() {
     var _self = this;
     this.showLoadingTyres = false;
     basketModel = new BasketModel();
-    basketModel.getItems();
+  //  basketModel.getItems();
     
 
     this.updateBuket = function (tyreID) {

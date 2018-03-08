@@ -161,16 +161,16 @@
     <Compile Include="StaticList.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\colorbox.css" />
-    <Content Include="Content\font-awesome.css" />
-    <Content Include="Content\font-awesome.min.css" />
-    <Content Include="Content\images\border1.png" />
-    <Content Include="Content\images\border2.png" />
-    <Content Include="Content\images\loading.gif" />
+    <Content Include="Content\toolscss\bootstrap-theme.css" />
+    <Content Include="Content\toolscss\bootstrap-theme.min.css" />
+    <Content Include="Content\toolscss\bootstrap.css" />
+    <Content Include="Content\toolscss\bootstrap.min.css" />
+    <Content Include="Content\toolscss\colorbox.css" />
+    <Content Include="Content\toolscss\font-awesome.css" />
+    <Content Include="Content\toolscss\font-awesome.min.css" />
+    <Content Include="Content\toolscss\images\border1.png" />
+    <Content Include="Content\toolscss\images\border2.png" />
+    <Content Include="Content\toolscss\images\loading.gif" />
     <Content Include="Content\Material\mdb.css" />
     <Content Include="Content\Material\mdb.min.css" />
     <Content Include="Content\myStyle.css" />
@@ -178,12 +178,11 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\tools\bootstrap.js" />
+    <Content Include="Scripts\tools\bootstrap.min.js" />
     <Content Include="Scripts\client\basketmodel.js" />
     <Content Include="Scripts\client\handlers.js" />
     <Content Include="Scripts\client\mainmodel.js" />
@@ -200,50 +199,46 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
-    <Content Include="Scripts\bootstrap.min.js.map" />
-    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\tools\bootstrap.min.js.map" />
+    <Content Include="Scripts\tools\bootstrap.js.map" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Scripts\build.log" />
-    <Content Include="Scripts\bower.json" />
-    <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
-    <Content Include="Scripts\jquery-3.0.0.js" />
-    <Content Include="Scripts\jquery-3.0.0.min.js" />
-    <Content Include="Scripts\jquery-3.0.0.slim.js" />
-    <Content Include="Scripts\jquery-3.0.0.slim.min.js" />
-    <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
-    <Content Include="Scripts\jquery-3.0.0.min.map" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.colorbox-min.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\LICENSE.txt" />
+    <Content Include="Content\toolscss\bootstrap.min.css.map" />
+    <Content Include="Content\toolscss\bootstrap.css.map" />
+    <Content Include="Content\toolscss\bootstrap-theme.min.css.map" />
+    <Content Include="Content\toolscss\bootstrap-theme.css.map" />
+    <Content Include="Scripts\tools\build.log" />
+    <Content Include="Scripts\tools\bower.json" />
+    <None Include="Scripts\tools\jquery-3.0.0-vsdoc.js" />
+    <Content Include="Scripts\tools\jquery-3.0.0.js" />
+    <Content Include="Scripts\tools\jquery-3.0.0.min.js" />
+    <Content Include="Scripts\tools\jquery-3.0.0.slim.js" />
+    <Content Include="Scripts\tools\jquery-3.0.0.slim.min.js" />
+    <Content Include="Scripts\tools\jquery-3.0.0.slim.min.map" />
+    <Content Include="Scripts\tools\jquery-3.0.0.min.map" />
+    <None Include="Scripts\tools\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\tools\jquery.colorbox-min.js" />
+    <Content Include="Scripts\tools\jquery.validate.js" />
+    <Content Include="Scripts\tools\jquery.validate.min.js" />
+    <Content Include="Scripts\tools\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\tools\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\tools\LICENSE.txt" />
     <Content Include="Scripts\material\mdb.js" />
     <Content Include="Scripts\material\mdb.min.js" />
     <Content Include="Scripts\material\popper.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\tools\modernizr-2.6.2.js" />
     <Content Include="Scripts\client\myscript.js" />
-    <Content Include="Scripts\polymer-micro.html" />
-    <Content Include="Scripts\polymer-mini.html" />
-    <Content Include="Scripts\polymer.html" />
-    <Content Include="Scripts\popper-utils.js" />
-    <Content Include="Scripts\popper-utils.min.js" />
-    <Content Include="Scripts\popper.js" />
-    <Content Include="Scripts\popper.min.js" />
-    <Content Include="Scripts\respond.js" />
-    <Content Include="Scripts\respond.min.js" />
-    <Content Include="Scripts\umd\popper-utils.js" />
-    <Content Include="Scripts\umd\popper-utils.min.js" />
-    <Content Include="Scripts\umd\popper.js" />
-    <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Scripts\tools\polymer-micro.html" />
+    <Content Include="Scripts\tools\polymer-mini.html" />
+    <Content Include="Scripts\tools\polymer.html" />
+    <Content Include="Scripts\tools\popper-utils.js" />
+    <Content Include="Scripts\tools\popper-utils.min.js" />
+    <Content Include="Scripts\tools\popper.js" />
+    <Content Include="Scripts\tools\popper.min.js" />
+    <Content Include="Scripts\tools\respond.js" />
+    <Content Include="Scripts\tools\respond.min.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -258,21 +253,16 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Scripts\umd\popper.min.js.map" />
-    <Content Include="Scripts\umd\popper.js.map" />
-    <Content Include="Scripts\umd\popper-utils.min.js.map" />
-    <Content Include="Scripts\umd\popper-utils.js.map" />
-    <Content Include="Scripts\README.md" />
-    <Content Include="Scripts\popper.min.js.map" />
-    <Content Include="Scripts\popper.js.map" />
-    <Content Include="Scripts\popper-utils.min.js.map" />
-    <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Scripts\tools\README.md" />
+    <Content Include="Scripts\tools\popper.min.js.map" />
+    <Content Include="Scripts\tools\popper.js.map" />
+    <Content Include="Scripts\tools\popper-utils.min.js.map" />
+    <Content Include="Scripts\tools\popper-utils.js.map" />
     <Content Include="Views\Home\TyresView.cshtml" />
     <Content Include="Views\Home\basketView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Cart\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -284,7 +274,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="Scripts\index.d.ts" />
+    <TypeScriptCompile Include="Scripts\tools\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

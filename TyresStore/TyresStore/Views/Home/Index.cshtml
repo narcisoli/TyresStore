@@ -1,11 +1,11 @@
-﻿@model TyresStore.Models.Model
+﻿@model IList<TyresStore.Repository.Models.Vehicle>
 @{
     ViewBag.Title = "Home Page";
 }
 <!--
 
 
-@foreach (var vehicle in Model.vehicles)
+@foreach (var vehicle in Model)
 {
     <p>@vehicle.Manufacturer</p>
     <p>@vehicle.Model</p>
@@ -30,7 +30,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var vehicle in Model.vehicles)
+        @foreach (var vehicle in Model)
         {
             <tr>
                 <td>@vehicle.Manufacturer</td>
